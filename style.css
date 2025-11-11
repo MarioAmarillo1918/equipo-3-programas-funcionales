@@ -1,0 +1,131 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f6f8;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  color: #222;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ======== ENCABEZADO ======== */
+header {
+  background-color: #ff5722;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 5px solid #e64a19;
+}
+
+header h1 {
+  margin-bottom: 0.3rem;
+}
+
+header h2 {
+  margin-top: 0;
+  font-weight: 400;
+}
+
+header p, header ul {
+  font-size: 0.95rem;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+header li::before {
+  content: "👤 ";
+}
+
+/* ======== SECCIONES ======== */
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  border-left: 6px solid #ff5722;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  margin-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+}
+
+strong {
+  color: #d84315;
+}
+
+/* ======== ENLACES ======== */
+a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======== PIE DE PÁGINA ======== */
+footer {
+  background-color: #263238;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+
+/* ======== BOTÓN “ARRIBA” ======== */
+#volver-arriba {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 18px;
+  display: none;
+}
+
+#volver-arriba:hover {
+  background-color: #e64a19;
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+}
